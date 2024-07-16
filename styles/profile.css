@@ -1,0 +1,60 @@
+.profile-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.profile-img img{
+    height: 250px;
+    width: 250px;
+}
+.button-holder{
+    margin-top: 20px;
+}
+.change-profile-btn{
+    height: 30px;
+    width: 180px;
+    border-radius: 10px;
+}
+.change-profile-btn:hover{
+    background-color: aquamarine;
+    color: black;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+}
+.user-info{
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    margin: 20px;
+    border-radius: 20px;
+}
+.user-container{
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 600px;
+    height: 230px;
+    justify-content: space-around;
+}
+
+.delete-button{
+    display: flex;
+    justify-content: center;
+}
+.delete-button-btn{
+    background-color: red;
+    height: 40px;
+    width:200px;
+    border-radius: 30px;
+    font-size: larger;
+    color: aliceblue;
+}
+.delete-button-btn:hover{
+    background-color: rgb(158, 158, 158);
+    color: black;
+}
