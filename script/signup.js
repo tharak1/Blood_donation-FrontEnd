@@ -16,7 +16,7 @@ form.addEventListener('submit',register)
         console.log(JSON.stringify(obj));
 
 
-        const result = await fetch('http://localhost:5000/api/user/register',{
+        const result = await fetch('https://blood-donation-backend-beta.vercel.app/api/user/register',{
             method:'POST',
             headers:{
                 'content-type': 'application/json',
@@ -37,7 +37,7 @@ form.addEventListener('submit',register)
         }
 
         if(!result.error){
-            const result1 = await fetch('http://localhost:5000/api/user/login',{
+            const result1 = await fetch('https://blood-donation-backend-beta.vercel.app/api/user/login',{
             method:'POST',
             headers:{
                 'content-type': 'application/json',

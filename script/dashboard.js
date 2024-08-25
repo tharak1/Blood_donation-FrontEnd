@@ -1,6 +1,6 @@
 let token = localStorage.getItem('token')
 const call = async()=>{
-    const result = await fetch('http://localhost:5000/api/userData/getCurrentUserdata',{
+    const result = await fetch('https://blood-donation-backend-beta.vercel.app/api/userData/getCurrentUserdata',{
             method:'GET',
             headers:{
                     'Content-Type': 'application/json',

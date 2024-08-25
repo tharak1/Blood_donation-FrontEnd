@@ -4,7 +4,7 @@ console.log(bloodGroup);
 
 
 if(bloodGroup === 'noneselected'){
-    fetch(`http://localhost:5000/api/userData/getUserdata`,{
+    fetch(`https://blood-donation-backend-beta.vercel.app/api/userData/getUserdata`,{
     method: 'GET',
   headers: {
       'Accept': 'application/json', 
@@ -75,7 +75,7 @@ bloodGroupSelector.addEventListener("change",()=>{
     
 
 
-fetch(`http://localhost:5000/api/userData/getUserdata?bloodgroup=${ans}`,{
+fetch(`https://blood-donation-backend-beta.vercel.app/api/userData/getUserdata?bloodgroup=${ans}`,{
     method: 'GET',
   headers: {
       'Accept': 'application/json', 

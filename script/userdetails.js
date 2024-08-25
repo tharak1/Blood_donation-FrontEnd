@@ -1,3 +1,5 @@
+// http://localhost:5000
+
 const form1 = document.getElementById('my-data-form')
     form1.addEventListener('submit',setData)
     let token = localStorage.getItem('token')
@@ -29,7 +31,7 @@ const form1 = document.getElementById('my-data-form')
         console.log(obj);
         console.log(JSON.stringify(obj));
         console.log(token);
-        const result = await fetch('http://localhost:5000/api/userData/createUserData',{
+        const result = await fetch('https://blood-donation-backend-beta.vercel.app/api/userData/createUserData',{
             method:'POST',
             headers:{
                     'Content-Type': 'application/json',

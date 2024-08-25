@@ -1,4 +1,4 @@
-fetch("http://localhost:5000/api/hospital/gethospital",{
+fetch("https://blood-donation-backend-beta.vercel.app/api/hospital/gethospital",{
     method: 'GET',
   headers: {
       'Accept': 'application/json',
